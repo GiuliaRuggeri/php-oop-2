@@ -36,7 +36,9 @@
                                 <?= isset($product->weight) ? "<h5>Peso: $product->weight </h5>" : null ?>
                                 <?= isset($product->ingredients) ? "<h5>Ingredienti: $product->ingredients </h5>" : null ?>
                                 <?= isset($product->type) ? "<h5>Materiale:$product->type </h5>" : null ?>
-                                <?= isset($product->width) ?  "<h5>Dimensioni:$product->width </h5>" : null ?>
+                                <?= isset($product->width) ?  "<h5>Dimensioni: $product->width </h5>" : null ?>
+                                <h5>Colore: <?= $product->getColor()?></h5>
+
                             </div>
 
                         </div>
